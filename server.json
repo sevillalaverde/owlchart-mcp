@@ -1,0 +1,11 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.owlchart/owlchart",
+  "title": "OwlChart",
+  "description": "Live market data: open interest on 13 exchanges, liquidity magnets, ETF flows, funding, patterns",
+  "version": "1.0.0",
+  "websiteUrl": "https://owlchart.com/connectors.html",
+  "remotes": [
+    { "type": "streamable-http", "url": "https://owlchart.com/mcp" }
+  ]
+}
