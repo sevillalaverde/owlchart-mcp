@@ -8,7 +8,7 @@ https://owlchart.com/mcp
 
 Remote Streamable HTTP server, OAuth 2.1 with dynamic client registration. Trial with no account; PRO with a personal `owl_` key (Bearer). Official MCP Registry name: `com.owlchart/owlchart`.
 
-## Tools (13, read-only)
+## Tools (23)
 
 | Tool | What it returns |
 |---|---|
@@ -25,6 +25,11 @@ Remote Streamable HTTP server, OAuth 2.1 with dynamic client registration. Trial
 | get_market_radar | Major coins at a glance |
 | get_tokenization_overview | Stablecoins, tokenised treasuries, gold and shares read from the contracts |
 | get_crypto_regulation | CLARITY Act, SEC and CFTC tracker |
+| show_chart | A live candle chart drawn inside the AI chat (MCP Apps), with liquidity magnets |
+| get_money_flows | Stablecoin mints and burns, tokenised gold and treasuries, ETF money, open interest change |
+| get_track_record | Public forward-tested record of OwlChart's liquidity model, per coin |
+| create_alert / list_alerts / delete_alert / check_alerts | Alerts on open interest, liquidity magnets, funding, ETF verdict flips and price; delivered to the chat or a webhook |
+| get_watchlist / add_to_watchlist / remove_from_watchlist | The member's own watchlist with live prices |
 
 ## Connect
 
@@ -33,6 +38,8 @@ Remote Streamable HTTP server, OAuth 2.1 with dynamic client registration. Trial
 - Grok: grok.com/connectors, New Connector, Custom
 - Cursor: `{ "mcpServers": { "owlchart": { "url": "https://owlchart.com/mcp" } } }`
 - VS Code: `{ "servers": { "owlchart": { "type": "http", "url": "https://owlchart.com/mcp" } } }`
-- DeepSeek Harness, n8n, Make, Pipedream: see https://owlchart.com/connectors.html
+- Gemini, Perplexity, Le Chat, Copilot Studio, Claude Code, Codex CLI, Gemini CLI, Windsurf, Cline, Zed, Kiro, DeepSeek, n8n, Make, Pipedream: see https://owlchart.com/connectors.html and llms-install.md
+
+![OwlChart](owlchart-logo-400.png)
 
 Every answer carries the source, the read time and the owlchart.com page it came from. Data and analysis only, never a trade instruction.
